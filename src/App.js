@@ -15,7 +15,7 @@ function App() {
       <div className="App">
         <header>
           Color Picker Sprint Challenge
-    <a onClick={logout} data-testid="logoutButton" href="http://localhost:3000">logout</a>        
+    <a onClick={logout} data-testid="logoutButton" href="http://localhost:5000">logout</a>        
     </header>
 
     <PrivateRoute exact path="/bubblepage" component={BubblePage}/>

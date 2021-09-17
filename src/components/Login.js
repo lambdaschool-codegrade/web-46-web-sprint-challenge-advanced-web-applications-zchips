@@ -42,8 +42,8 @@ const handleSumbit = e => {
 const handleChanges = (e) => {
   setFormValues({
     ...formValues,
-    [e.target.name]: e.target.value
-  })
+    [e.target.username]: e.target.value,
+  });
 }
 
 
@@ -53,7 +53,7 @@ const handleChanges = (e) => {
       <div data-testid="loginForm" className="login-form">
         <h2>Build login form here</h2>
       </div>
-      <form onSubmit={handleSumbit}>
+      <form >
         <label htmlFor="username">Username</label>
         <input
         id="username"
@@ -71,7 +71,7 @@ const handleChanges = (e) => {
         value={formValues.passsword}
         onChange={handleChanges}
         />
-        <button> Login</button>
+        <button onClick={handleSumbit}> Login</button>
         
         </form>
 
